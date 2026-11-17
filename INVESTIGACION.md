@@ -12,7 +12,7 @@ página sin instalar nada porque son un estándar del navegador.
 - **HTMLTemplates:** Guardan un bloque de HTML inactivo que se clona cada vez que se necesita una copia del componente.
 
 
-### 2. ¿En qué se diferencia un <template> de un <div> oculto con display: none?
+### 2. ¿En qué se diferencia un `<template>` de un `<div>` oculto con display: none?
 
 Un `<div>` oculto sí forma parte del DOM: solo no se ve. Sus scripts se ejecutan, sus
 imágenes se descargan y `document.querySelector` encuentra sus elementos. El contenido de
@@ -25,7 +25,7 @@ página.
 
 En los dos modos el contenido está encapsulado y los estilos no se mezclan. La diferencia es el acceso desde fuera: con "open", la propiedad elemento.shadowRoot devuelve la raíz y otro código puede leer o modificar el interior del componente. Con "closed", elemento.shadowRoot devuelve null y solo la clase que guardó la referencia puede manipularlo. "closed" no es una medida de seguridad real; casi siempre se usa "open" porque facilita las pruebas y la depuración.
 
-### 4. ¿Qué es un <slot> y para qué sirve en un componente reutilizable?
+### 4. ¿Qué es un `<slot>` y para qué sirve en un componente reutilizable?
 
 Un <slot> es un "hueco" dentro del Shadow DOM donde se muestra el contenido que el usuario escribe entre las etiquetas del componente. Así el componente define la estructura y el estilo, pero quien lo usa decide parte del contenido. Con name="..." se pueden tener varios huecos con nombre, y el texto dentro del <slot> sirve como valor por defecto si no se envía nada. En nuestra ficha, el slot nota permite escribir una observación distinta para cada mascota.
 
