@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veterinaria Patitas · Fichas de mascotas</title>
+  <!-- El script va en el head con defer: se descarga en paralelo y se ejecuta
+       cuando el HTML ya terminó de leerse, así el <template> ya existe. -->
+  <script src="js/main.js" defer></script>
+  <!-- Estilos de la página (fondo, título y cuadrícula). Los estilos de la ficha
+       NO van aquí: están dentro del <template>, porque el Shadow DOM los aísla. -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- R1 · Template propio: no se muestra ni se ejecuta hasta que JavaScript lo clona.
+       Tiene su propio <style> (que solo afecta al componente gracias al Shadow DOM)
+       y marcadores vacíos (data-campo) que se rellenan desde js/main.js. -->
+  <template id="plantilla-mascota">
+    <style>
+      :host {
+        display: block;
+      }
+      .ficha {
+        background: #ffffff;
+        border-radius: 14px;
+        border-top: 6px solid #2a9d8f;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, .08);
+        padding: 1.25rem 1.5rem;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      h2 {
+        margin: 0 0 .75rem;
+        font-size: 1.4rem;
+        color: #264653;
+      }
+      dl {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: .35rem .75rem;
+        margin: 0 0 1rem;
+      }
+      dt {
+        font-weight: 600;
+        color: #5a6b68;
+      }
+      dd {
+        margin: 0;
+      }
+      .vacuna {
+        display: inline-block;
+        background: #e9f5f3;
+        color: #1d6f65;
+        border-radius: 8px;
+        padding: .15rem .6rem;
+        font-weight: 600;
+      }
+      .nota {
+        border-top: 1px dashed #c9d6d3;
+        padding-top: .75rem;
+        font-size: .95rem;
+        color: #3d4f4c;
+      }
+    </style>
+
+    <article class="ficha">
+      <h2 data-campo="nombre"></h2>
+      <dl>
+        <dt>Especie</dt>
+        <dd data-campo="especie"></dd>
+        <dt>Edad</dt>
+        <dd data-campo="edad"></dd>
+        <dt>Próxima vacuna</dt>
+        <dd><span class="vacuna" data-campo="vacuna"></span></dd>
+      </dl>
+      <div class="nota">
+        <!-- R4 · Slot: aquí aparece el texto libre que se escriba dentro de la etiqueta.
+             Si no se escribe nada, se muestra el texto por defecto. -->
+        <slot name="nota">Sin observaciones.</slot>
+      </div>
+    </article>
+  </template>
+
+
+  </main>
+
+</body>
+</html>
