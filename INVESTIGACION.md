@@ -47,7 +47,7 @@ Fuentes: MDN Web Docs, "Web Components", y Can I use, "Custom Elements (V1)". Co
 6. https://caniuse.com/custom-elementsv1
 
 
-### Parte 2 · Investigación: frameworks, librerías y Node.js
+### Parte 2 · Investigación: frameworks, librerías y Node.js.
 
 ## 1. Diferencia entre estándar del navegador, librería, framework y entorno de ejecución
 
