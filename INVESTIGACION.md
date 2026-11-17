@@ -46,4 +46,60 @@ Fuentes: MDN Web Docs, "Web Components", y Can I use, "Custom Elements (V1)". Co
 5. https://web.dev/articles/custom-elements-v1
 6. https://caniuse.com/custom-elementsv1
 
+
+### Parte 2 · Investigación: frameworks, librerías y Node.js
+
+## 1. Diferencia entre estándar del navegador, librería, framework y entorno de ejecución
+
+- **Estándar del navegador:** Son tecnologías y reglas que los navegadores reconocen de forma nativa, como HTML, CSS y JavaScript. Por ejemplo, Web Components permite crear etiquetas personalizadas sin instalar librerías externas.
+
+- **Librería:** Es un conjunto de herramientas y funciones que el programador utiliza cuando las necesita. Por ejemplo, React permite crear interfaces mediante componentes y el desarrollador decide cómo organizar su aplicación.
+
+- **Framework:** Es una estructura de trabajo que proporciona herramientas y reglas para desarrollar aplicaciones. Por ejemplo, Angular ofrece componentes, rutas, formularios y otras herramientas para organizar proyectos grandes.
+
+- **Entorno de ejecución:** Es el entorno que permite ejecutar código JavaScript fuera del navegador. Por ejemplo, Node.js permite ejecutar JavaScript en el servidor y desarrollar herramientas de programación.
+
+## 2. Tabla comparativa
+
+| Criterio | Web Components nativos | React | Vue | Angular |
+|---|---|---|---|---|
+| **Tipo** | Estándar del navegador. | Librería de JavaScript. | Framework progresivo de JavaScript. | Framework de desarrollo web. |
+| **Cómo se crea un componente** | Mediante Custom Elements, clases JavaScript, Shadow DOM y HTML Templates. | Mediante funciones o clases que devuelven interfaces usando JSX. | Mediante componentes con templates, JavaScript y estilos. | Mediante clases TypeScript, el decorador @Component y plantillas HTML. |
+| **Necesita instalar herramientas (npm)** | No, porque utiliza funciones nativas del navegador. | Generalmente sí, para instalar React y sus herramientas de desarrollo. | Generalmente sí, para instalar Vue y sus herramientas de desarrollo. | Sí, normalmente utiliza npm y Angular CLI para crear y administrar proyectos. |
+| **Ventajas principales** | No necesita dependencias externas, funciona con estándares web y permite reutilizar componentes en diferentes proyectos. | Permite crear interfaces dinámicas, reutilizar componentes y controlar los cambios de información. | Tiene una sintaxis sencilla, es flexible y permite desarrollar aplicaciones de diferentes tamaños. | Ofrece una estructura organizada, herramientas integradas y facilita el trabajo en equipos grandes. |
+| **Desventajas principales** | Requiere escribir más código manualmente y administrar por cuenta propia algunas funcionalidades. | Necesita herramientas adicionales para manejar rutas y otras funcionalidades de una aplicación completa. | Algunas aplicaciones necesitan herramientas adicionales para funcionalidades avanzadas y proyectos grandes. | Tiene una curva de aprendizaje mayor y requiere conocer TypeScript y su estructura de trabajo. |
+
+## 3. ¿Qué es Node.js, para qué se usa y qué relación tiene npm con React, Vue y Angular?
+
+Node.js es un entorno de ejecución que permite ejecutar JavaScript fuera del navegador. Se utiliza para crear servidores, aplicaciones de red, herramientas de desarrollo y ejecutar programas JavaScript.
+
+npm es el administrador de paquetes que permite instalar, actualizar y administrar librerías y dependencias de JavaScript. Se utiliza junto con Node.js para instalar herramientas y paquetes de React, Vue y Angular.
+
+**Ejemplo de una tienda en línea que utiliza React y Node.js:**
+
+- **React:** Se encarga de la parte visual de la tienda, como mostrar los productos, el carrito de compras, los botones y las interacciones con el usuario.
+- **Node.js:** Se encarga de ejecutar el servidor, procesar solicitudes, comunicarse con la base de datos y gestionar operaciones como los pedidos.
+
+En conclusión, React trabaja principalmente en la interfaz que utiliza el cliente, mientras que Node.js permite ejecutar la lógica del servidor. Ambos pueden trabajar juntos para construir una aplicación web.
+
+## 4. Elección de herramientas según cada caso
+
+### a. Un botón de chat que varias empresas pegan en sus propias páginas.
+
+Elegiría Web Components nativos porque permiten crear un componente independiente y reutilizable que puede integrarse en diferentes páginas web. No depende de un framework específico ni necesita que las empresas instalen React, Vue o Angular. Además, Shadow DOM permite encapsular sus estilos y evitar conflictos con las páginas donde se utiliza.
+
+### b. Una aplicación web grande para un banco, con muchos equipos de desarrollo.
+
+Elegiría Angular porque proporciona una estructura organizada para desarrollar aplicaciones grandes. Incluye herramientas para administrar componentes, rutas, formularios y servicios, además de utilizar TypeScript. Esto facilita mantener el código organizado, distribuir responsabilidades y trabajar entre diferentes equipos de desarrollo.
+
+## Fuentes
+
 ### Parte 2
+
+1. https://developer.mozilla.org/es/docs/Web/API/Web_components
+2. https://react.dev/
+3. https://vuejs.org/guide/introduction.html
+4. https://angular.dev/overview
+5. https://nodejs.org/learn/getting-started/introduction-to-nodejs
+6. https://docs.npmjs.com/about-npm/
+
