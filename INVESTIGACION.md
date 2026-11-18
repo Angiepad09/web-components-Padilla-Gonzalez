@@ -35,9 +35,9 @@ Todos los navegadores modernos: Chrome, Edge, Firefox, Safari y Opera, en escrit
 
 Fuentes: MDN Web Docs, "Web Components", y Can I use, "Custom Elements (V1)". Consulta el 17 de noviembre de 2026.
 
-### Parte 2 · Investigación: frameworks, librerías y Node.js.
+## Parte 2 · Investigación: frameworks, librerías y Node.js.
 
-## 1. Diferencia entre estándar del navegador, librería, framework y entorno de ejecución
+### 1. Diferencia entre estándar del navegador, librería, framework y entorno de ejecución
 
 - **Estándar del navegador:** Son tecnologías y reglas que los navegadores reconocen de forma nativa, como HTML, CSS y JavaScript. Por ejemplo, Web Components permite crear etiquetas personalizadas sin instalar librerías externas.
 
@@ -47,7 +47,7 @@ Fuentes: MDN Web Docs, "Web Components", y Can I use, "Custom Elements (V1)". Co
 
 - **Entorno de ejecución:** Es el entorno que permite ejecutar código JavaScript fuera del navegador. Por ejemplo, Node.js permite ejecutar JavaScript en el servidor y desarrollar herramientas de programación.
 
-## 2. Tabla comparativa
+### 2. Tabla comparativa
 
 | Criterio | Web Components nativos | React | Vue | Angular |
 |---|---|---|---|---|
@@ -57,7 +57,7 @@ Fuentes: MDN Web Docs, "Web Components", y Can I use, "Custom Elements (V1)". Co
 | **Ventajas principales** | No necesita dependencias externas, funciona con estándares web y permite reutilizar componentes en diferentes proyectos. | Permite crear interfaces dinámicas, reutilizar componentes y controlar los cambios de información. | Tiene una sintaxis sencilla, es flexible y permite desarrollar aplicaciones de diferentes tamaños. | Ofrece una estructura organizada, herramientas integradas y facilita el trabajo en equipos grandes. |
 | **Desventajas principales** | Requiere escribir más código manualmente y administrar por cuenta propia algunas funcionalidades. | Necesita herramientas adicionales para manejar rutas y otras funcionalidades de una aplicación completa. | Algunas aplicaciones necesitan herramientas adicionales para funcionalidades avanzadas y proyectos grandes. | Tiene una curva de aprendizaje mayor y requiere conocer TypeScript y su estructura de trabajo. |
 
-## 3. ¿Qué es Node.js, para qué se usa y qué relación tiene npm con React, Vue y Angular?
+### 3. ¿Qué es Node.js, para qué se usa y qué relación tiene npm con React, Vue y Angular?
 
 Node.js es un entorno de ejecución que permite ejecutar JavaScript fuera del navegador. Se utiliza para crear servidores, aplicaciones de red, herramientas de desarrollo y ejecutar programas JavaScript.
 
@@ -70,17 +70,15 @@ npm es el administrador de paquetes que permite instalar, actualizar y administr
 
 En conclusión, React trabaja principalmente en la interfaz que utiliza el cliente, mientras que Node.js permite ejecutar la lógica del servidor. Ambos pueden trabajar juntos para construir una aplicación web.
 
-## 4. Elección de herramientas según cada caso
+### 4. Elección de herramientas según cada caso
 
-### a. Un botón de chat que varias empresas pegan en sus propias páginas.
+#### a. Un botón de chat que varias empresas pegan en sus propias páginas.
 
 Elegiría Web Components nativos porque permiten crear un componente independiente y reutilizable que puede integrarse en diferentes páginas web. No depende de un framework específico ni necesita que las empresas instalen React, Vue o Angular. Además, Shadow DOM permite encapsular sus estilos y evitar conflictos con las páginas donde se utiliza.
 
-### b. Una aplicación web grande para un banco, con muchos equipos de desarrollo.
+#### b. Una aplicación web grande para un banco, con muchos equipos de desarrollo.
 
 Elegiría Angular porque proporciona una estructura organizada para desarrollar aplicaciones grandes. Incluye herramientas para administrar componentes, rutas, formularios y servicios, además de utilizar TypeScript. Esto facilita mantener el código organizado, distribuir responsabilidades y trabajar entre diferentes equipos de desarrollo.
-
-## Fuentes
 
 ## Fuentes
 
