@@ -21,7 +21,7 @@ tiene un espacio libre (slot) para las observaciones del veterinario.
 | `INVESTIGACION.md` | Partes 1 y 2 |
 | `index.html` | El `<template>` y las 3 instancias del componente |
 | `js/main.js` | La clase del componente, comentada por requisito (R1 a R5) |
-| `css/styles.css` |
+| `css/styles.css` | Estilos de la página (fondo, título y cuadrícula) |
 
 ## Cómo probar el componente
 

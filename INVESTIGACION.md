@@ -35,18 +35,6 @@ Todos los navegadores modernos: Chrome, Edge, Firefox, Safari y Opera, en escrit
 
 Fuentes: MDN Web Docs, "Web Components", y Can I use, "Custom Elements (V1)". Consulta el 17 de noviembre de 2026.
 
-## Fuentes
-
-### Parte 1
-
-1. https://developer.mozilla.org/es/docs/Web/API/Web_components
-2. https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/template
-3. https://developer.mozilla.org/es/docs/Web/API/Web_components/Using_shadow_DOM
-4. https://developer.mozilla.org/es/docs/Web/API/Web_components/Using_templates_and_slots
-5. https://web.dev/articles/custom-elements-v1
-6. https://caniuse.com/custom-elementsv1
-
-
 ### Parte 2 · Investigación: frameworks, librerías y Node.js.
 
 ## 1. Diferencia entre estándar del navegador, librería, framework y entorno de ejecución
@@ -94,12 +82,18 @@ Elegiría Angular porque proporciona una estructura organizada para desarrollar 
 
 ## Fuentes
 
-### Parte 2
+## Fuentes
 
-1. https://developer.mozilla.org/es/docs/Web/API/Web_components
-2. https://react.dev/
-3. https://vuejs.org/guide/introduction.html
-4. https://angular.dev/overview
-5. https://nodejs.org/learn/getting-started/introduction-to-nodejs
-6. https://docs.npmjs.com/about-npm/
+Todas consultadas el 17 de noviembre de 2026.
 
+1. MDN Web Docs. *Web Components.* https://developer.mozilla.org/es/docs/Web/API/Web_components
+2. MDN Web Docs. *`<template>`: el elemento de plantilla de contenido.* https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/template
+3. MDN Web Docs. *Usando shadow DOM.* https://developer.mozilla.org/es/docs/Web/API/Web_components/Using_shadow_DOM
+4. MDN Web Docs. *Usando plantillas y slots.* https://developer.mozilla.org/es/docs/Web/API/Web_components/Using_templates_and_slots
+5. web.dev. *Custom Elements v1: Reusable Web Components.* https://web.dev/articles/custom-elements-v1
+6. Can I use. *Custom Elements (V1).* https://caniuse.com/custom-elementsv1
+7. React (documentación oficial). *React.* https://react.dev/
+8. Vue.js (documentación oficial). *Introduction.* https://vuejs.org/guide/introduction.html
+9. Angular (documentación oficial). *What is Angular?* https://angular.dev/overview
+10. Node.js (documentación oficial). *Introduction to Node.js.* https://nodejs.org/learn/getting-started/introduction-to-nodejs
+11. npm Docs. *About npm.* https://docs.npmjs.com/about-npm/
