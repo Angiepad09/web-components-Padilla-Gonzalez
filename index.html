@@ -4,18 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Veterinaria Patitas · Fichas de mascotas</title>
-  <!-- El script va en el head con defer: se descarga en paralelo y se ejecuta
-       cuando el HTML ya terminó de leerse, así el <template> ya existe. -->
+  
   <script src="js/main.js" defer></script>
-  <!-- Estilos de la página (fondo, título y cuadrícula). Los estilos de la ficha
-       NO van aquí: están dentro del <template>, porque el Shadow DOM los aísla. -->
+  
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- R1 · Template propio: no se muestra ni se ejecuta hasta que JavaScript lo clona.
-       Tiene su propio <style> (que solo afecta al componente gracias al Shadow DOM)
-       y marcadores vacíos (data-campo) que se rellenan desde js/main.js. -->
   <template id="plantilla-mascota">
     <style>
       :host {
@@ -75,8 +70,6 @@
         <dd><span class="vacuna" data-campo="vacuna"></span></dd>
       </dl>
       <div class="nota">
-        <!-- R4 · Slot: aquí aparece el texto libre que se escriba dentro de la etiqueta.
-             Si no se escribe nada, se muestra el texto por defecto. -->
         <slot name="nota">Sin observaciones.</slot>
       </div>
     </article>
@@ -87,8 +80,6 @@
     <p>Fichas de los pacientes de esta semana</p>
   </header>
 
-  <!-- R5 · Reutilización: el mismo componente se usa 3 veces con datos distintos.
-       R3 · Atributos: cada instancia recibe nombre, especie, edad y proxima-vacuna. -->
   <main>
     <ficha-mascota nombre="Luna" especie="Perro" edad="3" proxima-vacuna="2026-12-05">
       <p slot="nota">Alérgica al pollo. Viene a control de piel cada mes.</p>
