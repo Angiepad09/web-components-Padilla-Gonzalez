@@ -9,7 +9,7 @@
   <script src="js/main.js" defer></script>
   <!-- Estilos de la página (fondo, título y cuadrícula). Los estilos de la ficha
        NO van aquí: están dentro del <template>, porque el Shadow DOM los aísla. -->
-  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -82,7 +82,25 @@
     </article>
   </template>
 
+  <header>
+    <h1>Veterinaria Patitas</h1>
+    <p>Fichas de los pacientes de esta semana</p>
+  </header>
 
+  <!-- R5 · Reutilización: el mismo componente se usa 3 veces con datos distintos.
+       R3 · Atributos: cada instancia recibe nombre, especie, edad y proxima-vacuna. -->
+  <main>
+    <ficha-mascota nombre="Luna" especie="Perro" edad="3" proxima-vacuna="2026-12-05">
+      <p slot="nota">Alérgica al pollo. Viene a control de piel cada mes.</p>
+    </ficha-mascota>
+
+    <ficha-mascota nombre="Michi" especie="Gato" edad="1" proxima-vacuna="2027-01-20">
+      <p slot="nota">Primera desparasitación aplicada. Es nervioso en la consulta.</p>
+    </ficha-mascota>
+
+    <ficha-mascota nombre="Coco" especie="Conejo" edad="5" proxima-vacuna="2026-11-30">
+      <p slot="nota">Dieta alta en heno. Revisar el crecimiento de los dientes.</p>
+    </ficha-mascota>
   </main>
 
 </body>
