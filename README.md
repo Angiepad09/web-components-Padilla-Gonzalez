@@ -4,8 +4,8 @@ Actividad evaluativa: Web Components, HTMLTemplates y frameworks.
 
 ## Integrantes
 
-- Nombre Apellido 1 (usuario de GitHub: `@usuario1`)
-- Yurly Gonzalez Dulcey (usuario de GitHub: `ingyurlygonzalezdulcey-creator`)
+- Angie Padilla Galvis (GitHub: `Angiepad09`)
+- Yurly Gonzalez Dulcey (GitHub: `ingyurlygonzalezdulcey-creator`)
 
 ## Caso elegido
 
@@ -18,23 +18,17 @@ tiene un espacio libre (slot) para las observaciones del veterinario.
 | Archivo | Contenido |
 |---|---|
 | `README.md` | Este archivo |
-| `INVESTIGACION.md` | Partes 1 y 2, con la tabla y la lista de fuentes |
+| `INVESTIGACION.md` | Partes 1 y 2 |
 | `index.html` | El `<template>` y las 3 instancias del componente |
 | `js/main.js` | La clase del componente, comentada por requisito (R1 a R5) |
+| `css/styles.css` |
 
 ## Cómo probar el componente
 
 1. Clonar o descargar el repositorio.
-2. Abrir `index.html` en el navegador (doble clic o con la extensión Live Server de VS Code).
+2. Abrir `index.html` en el navegador con la extensión Live Server de VS Code.
 3. Se deben ver 3 fichas: Luna, Michi y Coco, cada una con sus datos y su nota.
 4. Abrir la consola (F12) y comprobar que no hay errores.
-5. Prueba opcional de atributos: en la consola escribir
-
-   ```js
-   document.querySelector('ficha-mascota').setAttribute('nombre', 'Lunita')
-   ```
-
-   La primera ficha cambia de nombre sin recargar la página.
 
 ## Uso del componente
 
@@ -54,8 +48,4 @@ tiene un espacio libre (slot) para las observaciones del veterinario.
 
 ## Declaración de uso de IA
 
-Usamos Claude (Anthropic) como apoyo para organizar la investigación, encontrar fuentes
-oficiales y revisar la estructura del componente. Revisamos y ajustamos el contenido, y
-podemos explicar con nuestras palabras cada parte: por qué el `<template>` no se
-renderiza, cómo se clona dentro del Shadow DOM, cómo funcionan los atributos observados y
-el slot, y por qué Node.js es un entorno de ejecución y no un framework.
+Usamos Claude como apoyo para organizar la investigación, encontrar fuentes oficiales y revisar el componente. Revisamos el contenido, y podemos explicar cada parte cómo se clona dentro del Shadow DOM, cómo funcionan los atributos observados, y por qué Node.js es un entorno de ejecución y no un framework.
